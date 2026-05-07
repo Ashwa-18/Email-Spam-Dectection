@@ -1,11 +1,14 @@
-import streamlit as st
+iimport streamlit as st
 import pickle
-from nltk.stem.porter import PorterStemmer
 import string
 import nltk
-
-nltk.download('stopwords')# use for removing stop words like is, a, the
 from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
 ps = PorterStemmer()
 
 # Load the vectorizer and model
